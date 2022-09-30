@@ -1,0 +1,4 @@
+Technologies: 
+    React
+    Typescript
+    Tailwind
