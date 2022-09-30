@@ -9,27 +9,21 @@ import reactWeather from "../assets/portfolio/reactWeather.jpg";
 function Portfolio() {
   const portfolios = [
     {
-      id: 1,
       src: arrayDestruct,
     },
     {
-      id: 2,
       src: reactParallax,
     },
     {
-      id: 3,
       src: navbar,
     },
     {
-      id: 4,
       src: reactSmooth,
     },
     {
-      id: 5,
       src: installNode,
     },
     {
-      id: 6,
       src: reactWeather,
     },
   ];
@@ -47,11 +41,12 @@ function Portfolio() {
           </p>
           <p className="py-6">My work:</p>
         </div>
+        <span>UNDER CONSTRUCTION . . .</span>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => {
+        {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          {portfolios.map(({ src }, index) => {
             return (
-              <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+              <div key={index} className="shadow-md shadow-gray-600 rounded-lg">
                 <img
                   src={src}
                   alt=""
@@ -68,7 +63,7 @@ function Portfolio() {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );

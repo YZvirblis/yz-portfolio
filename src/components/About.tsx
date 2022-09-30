@@ -14,17 +14,23 @@ function About() {
           </p>
         </div>
         <p className="text-xl mt-20">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ipsa
-          obcaecati provident laborum hic architecto quae incidunt magnam
-          maiores omnis aspernatur, voluptatibus laudantium nam minima dolorem
-          est rerum quia mollitia!
+          My name is Yuriy Zhvirblis. <br />
+          I finished a Full Stack Development course at ITC (Israel Tech
+          Challenge Tel-Aviv).
+          <br />
+          My experience comes from working with companies like Moonverse,
+          TLVTech, Deeb and also from creating personal projects.
+          <br />
+          Today I am a freelance Full Stack Developer. some of my works include:
+          creating websites, blogs, backend API servers, games, bots and more..{" "}
+          <br /> I am looking for the right opportunity.
         </p>
         <br />
         <p className="text-xl">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
-          saepe, qui perspiciatis cupiditate doloribus pariatur, nemo natus
-          consectetur magnam quasi aspernatur? Nobis rem tempora deleniti, harum
-          eveniet beatae dolorem ullam!
+          Aside from coding I like admiring art and playing video games. <br />I
+          see video games as the ultimate art as it combines all of the aspects
+          of it. <br />I also like learning new stuff if it's from books or from
+          documentaries.
         </p>
       </div>
     </div>

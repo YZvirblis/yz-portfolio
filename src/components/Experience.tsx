@@ -17,6 +17,7 @@ import bootstrap from "../assets/bootstrap.svg";
 import csharp from "../assets/csharp.svg";
 import angular from "../assets/angular.png";
 import aws from "../assets/aws.png";
+import typescript from "../assets/typescript.png";
 
 function Experience() {
   const techs = [
@@ -34,6 +35,11 @@ function Experience() {
       src: javascript,
       title: "Javascript",
       style: "shadow-yellow-500",
+    },
+    {
+      src: typescript,
+      title: "Typescript",
+      style: "shadow-blue-500",
     },
     {
       src: reactImage,
