@@ -29,7 +29,7 @@ function NavBar() {
   ];
   return (
     <div className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4">
-      <div>
+      <div className="cursor-default">
         <h1 className="text-5xl font-signature ml-2">Yuriy Z.</h1>
       </div>
       <ul className="hidden md:flex">

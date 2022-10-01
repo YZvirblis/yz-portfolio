@@ -18,6 +18,7 @@ import csharp from "../assets/csharp.svg";
 import angular from "../assets/angular.png";
 import aws from "../assets/aws.png";
 import typescript from "../assets/typescript.png";
+import serverless from "../assets/serverless.png";
 
 function Experience() {
   const techs = [
@@ -115,6 +116,11 @@ function Experience() {
       src: aws,
       title: "AWS",
       style: "shadow-yellow-700",
+    },
+    {
+      src: serverless,
+      title: "Serverless",
+      style: "shadow-red-400",
     },
   ];
 
