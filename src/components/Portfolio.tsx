@@ -1,10 +1,5 @@
 import React from "react";
 import nasaTracker from "../assets/portfolio/nasa-tracker.png";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
 function Portfolio() {
   const portfolios = [
