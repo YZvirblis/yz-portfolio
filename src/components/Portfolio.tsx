@@ -40,12 +40,12 @@ function Portfolio() {
                   <p>{info}</p>
                 </div>
                 <div className="flex items-center justify-center ">
-                  <a target={"_blank"} href={url}>
+                  <a target={"_blank"} rel="noreferrer" href={url}>
                     <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ">
                       Demo
                     </button>
                   </a>
-                  <a target={"_blank"} href={code}>
+                  <a target={"_blank"} rel="noreferrer" href={code}>
                     <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                       Code
                     </button>
