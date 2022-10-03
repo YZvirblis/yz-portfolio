@@ -1,32 +1,21 @@
 import React from "react";
-// import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-// import installNode from "../assets/portfolio/installNode.jpg";
-// import navbar from "../assets/portfolio/navbar.jpg";
-// import reactParallax from "../assets/portfolio/reactParallax.jpg";
-// import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-// import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import nasaTracker from "../assets/portfolio/nasa-tracker.png";
+import installNode from "../assets/portfolio/installNode.jpg";
+import navbar from "../assets/portfolio/navbar.jpg";
+import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
 function Portfolio() {
-  // const portfolios = [
-  //   {
-  //     src: arrayDestruct,
-  //   },
-  //   {
-  //     src: reactParallax,
-  //   },
-  //   {
-  //     src: navbar,
-  //   },
-  //   {
-  //     src: reactSmooth,
-  //   },
-  //   {
-  //     src: installNode,
-  //   },
-  //   {
-  //     src: reactWeather,
-  //   },
-  // ];
+  const portfolios = [
+    {
+      src: nasaTracker,
+      url: "https://nasa-event-tracker-app.netlify.app/",
+      code: "https://github.com/YZvirblis/nasa-realtime-event-google-map",
+      title: "NASA Event Tracker",
+      info: "A simple app presenting natural event data from NASA API on to a Google map",
+    },
+  ];
 
   return (
     <div
@@ -41,29 +30,36 @@ function Portfolio() {
           </p>
           <p className="py-6">My work:</p>
         </div>
-        <span>UNDER CONSTRUCTION . . .</span>
 
-        {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ src }, index) => {
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          {portfolios.map(({ src, url, code, title, info }, index) => {
             return (
               <div key={index} className="shadow-md shadow-gray-600 rounded-lg">
                 <img
                   src={src}
-                  alt=""
+                  alt={`project-${index}`}
                   className="rounded-md duration-200 hover:scale-105"
                 />
-                <div className="flex items-center justify-center">
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    Demo
-                  </button>
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                    Code
-                  </button>
+                <div className="my-2 px-3">
+                  <p className="font-bold">{title}</p>
+                  <p>{info}</p>
+                </div>
+                <div className="flex items-center justify-center ">
+                  <a target={"_blank"} href={url}>
+                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ">
+                      Demo
+                    </button>
+                  </a>
+                  <a target={"_blank"} href={code}>
+                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                      Code
+                    </button>
+                  </a>
                 </div>
               </div>
             );
           })}
-        </div> */}
+        </div>
       </div>
     </div>
   );
