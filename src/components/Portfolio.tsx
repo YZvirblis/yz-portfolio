@@ -1,5 +1,6 @@
 import React from "react";
 import nasaTracker from "../assets/portfolio/nasa-tracker.png";
+import zMarket from "../assets/portfolio/z-market.png";
 
 function Portfolio() {
   const portfolios = [
@@ -8,7 +9,14 @@ function Portfolio() {
       url: "https://nasa-event-tracker-app.netlify.app/",
       code: "https://github.com/YZvirblis/nasa-realtime-event-google-map",
       title: "NASA Event Tracker",
-      info: "A simple app presenting natural event data from NASA API on to a Google map",
+      info: "A simple React app presenting natural event data from NASA API on to a Google map.",
+    },
+    {
+      src: zMarket,
+      url: "https://lively-feather-0873.on.fleek.co/",
+      code: "https://github.com/YZvirblis/z-market-showcase/blob/main/README.md",
+      title: "Z-Market",
+      info: "React showcase page + React Native app for the Z-Market NFT marketplace (2 projects).",
     },
   ];
 

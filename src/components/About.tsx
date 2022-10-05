@@ -15,10 +15,10 @@ function About() {
         </div>
         <p className="md:text-xl mt-5 md:mt-20">
           My name is Yuriy Zhvirblis. <br />
-          I finished a Full Stack Development course at ITC (Israel Tech
-          Challenge Tel-Aviv).
+          I am a Fullstack developer. I finished a Full Stack Development course
+          at ITC (Israel Tech Challenge Tel-Aviv).
           <br />
-          My experience comes from working with companies like Moonverse,
+          Mainly my experience comes from working with companies like Moonverse,
           TLVTech, Deeb and also from creating personal projects.
           <br />
           Today I am a freelance Full Stack Developer. some of my works include:
