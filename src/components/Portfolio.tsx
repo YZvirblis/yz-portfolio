@@ -1,16 +1,24 @@
 import React from "react";
 import nasaTracker from "../assets/portfolio/nasa-tracker.png";
+import carShowcase from "../assets/portfolio/car-showcase.png";
 import zMarket from "../assets/portfolio/z-market.png";
 
 function Portfolio() {
   const portfolios = [
     {
-      src: nasaTracker,
-      url: "https://nasa-event-tracker-app.netlify.app/",
-      code: "https://github.com/YZvirblis/nasa-realtime-event-google-map",
-      title: "NASA Event Tracker",
-      info: "A simple React app presenting natural event data from NASA API on to a Google map.",
+      src: carShowcase,
+      url: "https://iridescent-cactus-a5aeb8.netlify.app/",
+      code: "https://github.com/YZvirblis/3d-car",
+      title: "3D Car Showcase",
+      info: "A Car Showcase Created With ThreeJS and React Three Fiber",
     },
+    // {
+    //   src: nasaTracker,
+    //   url: "https://nasa-event-tracker-app.netlify.app/",
+    //   code: "https://github.com/YZvirblis/nasa-realtime-event-google-map",
+    //   title: "NASA Event Tracker",
+    //   info: "A simple React app presenting natural event data from NASA API on to a Google map.",
+    // },
     {
       src: zMarket,
       url: "https://lively-feather-0873.on.fleek.co/",
