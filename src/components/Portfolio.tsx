@@ -2,6 +2,7 @@ import React from "react";
 // import nasaTracker from "../assets/portfolio/nasa-tracker.png";
 import carShowcase from "../assets/portfolio/car-showcase.png";
 import zMarket from "../assets/portfolio/z-market.png";
+import echoSlate from "../assets/portfolio/EchoSlateBlog.png";
 
 function Portfolio() {
   const portfolios = [
@@ -26,6 +27,13 @@ function Portfolio() {
       title: "Z-Market",
       info: "React showcase page + React Native app for the Z-Market NFT marketplace (2 projects).",
     },
+    {
+      src: echoSlate,
+      url: "https://echoslate.vercel.app/",
+      code: "https://github.com/YZvirblis/EchoSlate",
+      title: "Echoslate",
+      info: "A NextJS blog using GraphCMS",
+    },
   ];
 
   return (
@@ -43,33 +51,35 @@ function Portfolio() {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ src, url, code, title, info }, index) => {
+          { portfolios.map(({ src, url, code, title, info }, index) => {
             return (
-              <div key={index} className="shadow-md shadow-gray-600 rounded-lg">
+              <div key={ index } className="shadow-md shadow-gray-600 rounded-lg">
                 <img
-                  src={src}
-                  alt={`project-${index}`}
+                  src={ src }
+                  alt={ `project-${index}` }
                   className="rounded-md duration-200 hover:scale-105"
                 />
-                <div className="my-2 px-3">
-                  <p className="font-bold">{title}</p>
-                  <p>{info}</p>
-                </div>
-                <div className="flex items-center justify-center ">
-                  <a target={"_blank"} rel="noreferrer" href={url}>
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ">
-                      Demo
-                    </button>
-                  </a>
-                  <a target={"_blank"} rel="noreferrer" href={code}>
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                      Code
-                    </button>
-                  </a>
+                <div className="flex flex-col h-auto justify-between align-middle ">
+                  <div className="my-2 px-3">
+                    <p className="font-bold">{ title }</p>
+                    <p>{ info }</p>
+                  </div>
+                  <div className="flex items-center justify-center ">
+                    <a target={ "_blank" } rel="noreferrer" href={ url }>
+                      <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 ">
+                        Demo
+                      </button>
+                    </a>
+                    <a target={ "_blank" } rel="noreferrer" href={ code }>
+                      <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                        Code
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             );
-          })}
+          }) }
         </div>
       </div>
     </div>
